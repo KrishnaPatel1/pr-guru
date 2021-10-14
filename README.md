@@ -28,6 +28,8 @@ The endpoint first validates whether the 3 mandatory params are present:
  - `pullNumber`: the unique identifier of the pull request as seen on GitHub
  - `reviewers`: an array containing GitHub usernames
 
+ If there are any issues with the validation, the endpoint will return a 200 response with an error message.
+
  Next, the users will be added as reviewers on the pull request using the `POST /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers` endpoint.
 
  Finally, pertinent information will be pulled from the response of the aforementioned API request and placed in the playload for user viewing.
