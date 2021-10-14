@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "target": "ES6",
+    "types": ["node"],
+    "sourceMap": true,
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "inlineSources": true,
+    "resolveJsonModule": true,
+    "lib": ["ES6"]
+
+  },
+  "include": ["./src/**/*"],
+  "exclude": [
+    "node_modules",
+    "./node_modules",
+    "./node_modules/*",
+    "./node_modules/@types/node/index.d.ts",
+    "./dist",
+    "./dist/**/*"
+  ],
+  "typeRoots": [
+    "./src/@types",
+    "./node_modules/@types"
+  ]
+}

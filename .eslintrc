@@ -1,0 +1,70 @@
+{
+  "extends": [
+    "airbnb"
+  ],
+  "env": {
+    "es6": true,
+    "mocha": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": 2020,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "json",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "camelcase": 1,
+    "comma-dangle": ["error", {
+      "arrays": "only-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "only-multiline",
+      "functions": "always-multiline"
+    }],
+    "complexity": ["error", { "max": 100 }],
+    "consistent-return": 0,
+    "default-case": 0,
+    "import/extensions": 0,
+    "import/prefer-default-export": 0,
+    "import/no-dynamic-require": 0,
+    "import/no-extraneous-dependencies": 0,
+    "no-continue": 0,
+    "no-restricted-syntax": ["error", "WithStatement", "BinaryExpression[operator='in']"],
+    "no-unused-expressions": 0,
+    "no-unused-vars": ["error", { "vars": "all", "argsIgnorePattern": "^_"}],
+    "no-param-reassign": 0,
+    "no-restricted-globals": 0,
+    "max-len": ["error", {
+      "code": 130,
+      "ignorePattern": "^const\\s.+=\\s*require\\(",
+      "ignoreUrls": true
+    }],
+    "no-underscore-dangle": ["off"],
+    "no-else-return": 0,
+    "no-empty-label": 0,
+    "no-extra-strict": 0,
+    "no-plusplus": 0,
+    "no-prototype-builtins": 0,
+    "no-var": 0,
+    "no-wrap-func": 0,
+    "no-useless-escape": 0,
+    "object-shorthand": ["error", "consistent-as-needed"],
+    "operator-linebreak": ["error", "after"],
+    "prefer-promise-reject-errors": 0,
+    "prefer-rest-params": 0,
+    "prefer-template": 0,
+    "space-return-throw-case": 0,
+    "strict": 0,
+    "vars-on-top": 0
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".ts", ".d.ts"]
+      }
+    }
+  }
+}
