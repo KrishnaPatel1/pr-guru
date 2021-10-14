@@ -6,6 +6,8 @@ It allows users to retrieve the code-review stats of their teammates and assign 
 
 # Overall Design
 
+PR-Guru is an NodeJS Express application written in Typescript.
+
 The bulk of the logic is located in `src/routes/index.ts`. This is where you'll find the two routes: `/stats` and `/assign`.
 
 The project makes use of the GitHub API. The following endpoints have been used:
